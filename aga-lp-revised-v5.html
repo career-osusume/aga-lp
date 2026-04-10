@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>失敗した私が伝えたいAGAのクリニックえらび</title>
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Koto Sugi Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+  background: #fff;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.wrap {
+  max-width: 480px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* ── ヘッダー画像 ── */
+.lp-hero img {
+  width: 100%;
+  display: block;
+}
+
+/* ── コンテンツエリア ── */
+.content {
+  padding: 0 16px;
+}
+
+/* ── 編集部プロフ ── */
+.editor-profile {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 20px 0 16px;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 16px;
+}
+.editor-avatar {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #2a8a9a;
+}
+.editor-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.editor-info {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+.editor-info .name {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 4px;
+}
+
+/* ── 吹き出し ── */
+.bubble {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin: 16px 0;
+}
+.bubble-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border: 2px solid #2a8a9a;
+}
+.bubble-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bubble-body {
+  background: #f0f0f0;
+  border-radius: 0 10px 10px 10px;
+  padding: 12px 14px;
+  font-size: 14px;
+  line-height: 1.75;
+  flex: 1;
+  position: relative;
+}
+.bubble-body::before {
+  content: '';
+  position: absolute;
+  left: -8px; top: 13px;
+  border: 5px solid transparent;
+  border-right: 8px solid #f0f0f0;
+  border-left: none;
+}
+
+/* ── 画像ブロック ── */
+.img-block {
+  width: 100%;
+  margin: 16px 0;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ── 見出し ── */
+.h2-block {
+  text-align: center;
+  font-size: clamp(17px, 4.5vw, 22px);
+  font-weight: bold;
+  line-height: 1.5;
+  margin: 28px 0 20px;
+  color: #1a1a1a;
+}
+.h2-block em { color: #e74c3c; font-style: normal; }
+.h2-block.teal em { color: #2a8a7a; }
+
+/* ── 区切り ── */
+.divider { border: none; border-top: 1px solid #eee; margin: 24px 0; }
+.divider-strong { border: none; border-top: 2px solid #2a8a9a; margin: 28px 0; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   追加コンテンツ：失敗パターン
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.fail-pattern-block {
+  background: #fff5f5;
+  border: 1px solid #f0c0c0;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 20px 0;
+}
+.fail-pattern-block .fp-title {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.fp-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0d8d8;
+}
+.fp-item:last-child { border-bottom: none; }
+.fp-num {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 11px;
+  font-weight: bold;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.fp-item h4 { font-size: 13px; font-weight: bold; color: #c0392b; margin-bottom: 3px; }
+.fp-item p  { font-size: 12px; color: #666; line-height: 1.6; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   追加コンテンツ：3条件
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.condition-block {
+  background: #1a5a7a;
+  padding: 24px 16px;
+  margin: 20px -16px;
+}
+.condition-block .cb-title {
+  color: #fff;
+  font-size: clamp(15px, 4vw, 18px);
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 18px;
+  line-height: 1.5;
+}
+.condition-block .cb-title small {
+  display: block;
+  font-size: 12px;
+  color: #7ee8d4;
+  font-weight: normal;
+  margin-bottom: 4px;
+}
+.cond-item {
+  background: rgba(255,255,255,0.1);
+  border-radius: 6px;
+  padding: 14px;
+  margin-bottom: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+.cond-num {
+  background: #c8922a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  min-width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+.cond-item h4 { font-size: 13px; font-weight: bold; color: #fff; margin-bottom: 3px; }
+.cond-item p  { font-size: 12px; color: rgba(255,255,255,0.75); line-height: 1.6; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   追加コンテンツ：銀クリ推奨
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.ginza-bridge-block {
+  background: #fffbf0;
+  border: 2px solid #2a8a9a;
+  border-radius: 8px;
+  padding: 18px;
+  margin: 20px 0;
+}
+.ginza-bridge-block .gb-title {
+  background: #2a8a9a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+.strength-list {
+  list-style: none;
+  font-size: 13px;
+  margin: 0;
+}
+.strength-list li {
+  padding: 8px 0 8px 26px;
+  border-bottom: 1px solid #e8e8e0;
+  position: relative;
+  line-height: 1.6;
+}
+.strength-list li:last-child { border-bottom: none; }
+.strength-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 2px;
+  color: #2a8a9a;
+  font-weight: bold;
+  font-size: 14px;
+}
+.strength-list li strong { color: #2a6a7a; display: block; margin-bottom: 2px; }
+.strength-list li span   { color: #666; font-size: 12px; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   クリニックカード（元LP再現）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.recommend-label {
+  background: #fffce8;
+  border: 1px solid #e8d870;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #8a7a20;
+  text-align: center;
+  margin: 24px 0 12px;
+}
+.clinic-card {
+  border: 1px solid #e0d890;
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 12px 0 24px;
+  background: #fff;
+}
+.clinic-card.main {
+  border: 2px solid #e8c830;
+  box-shadow: 0 2px 12px rgba(200,160,0,0.12);
+}
+.clinic-card-label {
+  background: #fffce0;
+  border-bottom: 1px solid #e8d870;
+  padding: 8px 14px;
+  font-size: 12px;
+  font-weight: bold;
+  color: #8a7020;
+}
+.clinic-thumb {
+  width: 100%;
+  display: block;
+}
+
+/* CTAボタン */
+.cta-red {
+  display: block;
+  background: #e74c3c;
+  color: #fff !important;
+  text-align: center;
+  padding: 16px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 12px 0;
+  border-radius: 4px;
+  line-height: 1.4;
+  transition: opacity 0.2s;
+}
+.cta-red:hover { opacity: 0.88; }
+.cta-red small {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: 3px;
+  opacity: 0.9;
+}
+.cta-gray {
+  display: block;
+  background: #666;
+  color: #fff !important;
+  text-align: center;
+  padding: 14px;
+  font-size: 14px;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 12px 0;
+  border-radius: 4px;
+  line-height: 1.4;
+  transition: opacity 0.2s;
+}
+.cta-gray:hover { opacity: 0.85; }
+
+/* 料金テーブル */
+.fee-section { padding: 16px 0; }
+.fee-section h4 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 3px solid #2a8a9a;
+}
+.fee-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.fee-table th {
+  background: #f0f0f0;
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  font-weight: bold;
+  text-align: center;
+  font-size: 12px;
+}
+.fee-table td {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+.fee-table td strong { color: #e74c3c; font-size: 16px; }
+
+/* 特徴リスト */
+.feature-section { padding: 4px 0 16px; }
+.feature-section h4 {
+  font-size: 13px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 3px solid #2a8a9a;
+}
+.feature-list {
+  list-style: none;
+  font-size: 13px;
+  color: #444;
+  line-height: 1.85;
+}
+.feature-list li {
+  padding-left: 22px;
+  position: relative;
+}
+.feature-list li::before {
+  content: '✔';
+  position: absolute;
+  left: 0;
+  color: #2a8a9a;
+}
+.feature-list li strong { color: #e74c3c; }
+
+/* 口コミ */
+.review-section { padding: 4px 0 12px; }
+.review-section h4 {
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+  padding-left: 8px;
+  border-left: 3px solid #2a8a9a;
+}
+.review-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: flex-start;
+}
+.review-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  background: #ddd;
+}
+.review-icon img { width: 100%; height: 100%; object-fit: cover; }
+.review-body {
+  background: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 6px;
+  padding: 10px 12px;
+  font-size: 13px;
+  flex: 1;
+  line-height: 1.6;
+}
+.review-stars { color: #f5a623; font-size: 12px; margin-bottom: 4px; }
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   比較表（追加強化版）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.compare-note {
+  background: #fffbf0;
+  border: 1px solid #c8a030;
+  border-radius: 4px;
+  padding: 10px 12px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 12px;
+  line-height: 1.7;
+}
+.compare-note strong { color: #8a6010; }
+
+table.compare-tbl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+table.compare-tbl th, table.compare-tbl td {
+  border: 1px solid #ddd;
+  padding: 9px 6px;
+  text-align: center;
+  vertical-align: middle;
+}
+table.compare-tbl th.th-label {
+  background: #f5f5f5;
+  color: #888;
+  width: 26%;
+  font-size: 11px;
+}
+table.compare-tbl th.th-ginza {
+  background: #2a8a9a;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+table.compare-tbl th.th-other {
+  background: #f0f0f0;
+  color: #888;
+  font-size: 11px;
+  line-height: 1.4;
+}
+table.compare-tbl td.td-label {
+  background: #fafafa;
+  text-align: left;
+  font-weight: bold;
+  color: #666;
+  font-size: 11px;
+}
+table.compare-tbl td.td-ginza {
+  background: #f0fafb;
+  font-weight: bold;
+  color: #1a7a8a;
+}
+table.compare-tbl td.td-ginza .tag {
+  background: #2a8a9a;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 2px;
+  display: inline-block;
+  line-height: 1.5;
+}
+table.compare-tbl td.td-other {
+  color: #999;
+  font-size: 11px;
+}
+
+/* ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   FAQ（元LP再現）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ */
+.faq-block { margin: 8px 0 24px; }
+.faq-item { margin-bottom: 10px; }
+.faq-q {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #1a1a1a;
+  line-height: 1.5;
+  margin-bottom: 6px;
+}
+.faq-q-mark {
+  background: #2a7a9a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+.faq-a {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.faq-a-mark {
+  background: #e74c3c;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  min-width: 24px;
+  height: 24px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+/* ── 最終CTA ── */
+.final-cta-block {
+  background: #1a3a5c;
+  padding: 32px 16px;
+  margin: 24px -16px 0;
+  text-align: center;
+}
+.final-cta-block p { color: rgba(255,255,255,0.8); font-size: 13px; margin-bottom: 8px; }
+.final-cta-block h3 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+.cta-final {
+  display: block;
+  background: #e74c3c;
+  color: #fff !important;
+  text-align: center;
+  padding: 18px;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  line-height: 1.4;
+}
+.cta-final small {
+  display: block;
+  font-size: 11px;
+  font-weight: normal;
+  margin-top: 4px;
+  opacity: 0.85;
+}
+
+/* ── フッター ── */
+.lp-footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 12px;
+  color: #aaa;
+  border-top: 1px solid #eee;
+  margin-top: 16px;
+}
+.lp-footer a { color: #aaa; }
+
+/* ── 元LP再現ブロック ── */
+.text-block-light {
+  background: #f5fbfb;
+  border: 1px solid #d0eaea;
+  border-radius: 6px;
+  padding: 18px;
+  margin: 16px 0;
+  font-size: 14px;
+  line-height: 1.8;
+  color: #333;
+}
+.text-block-light strong { color: #2a7a8a; }
+
+.h3-center {
+  text-align: center;
+  font-size: 17px;
+  font-weight: bold;
+  margin: 24px 0 12px;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+.h3-center em { color: #2a8a7a; font-style: normal; }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     元LPコンテンツ（画像使用）
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+<!-- ヘッダー画像 -->
+<div class="lp-hero">
+  <img src="hero.png" alt="失敗した私が伝えたいAGAのクリニックえらび">
+</div>
+
+<div class="content">
+
+<!-- 編集部プロフィール -->
+<div class="editor-profile">
+  <div class="editor-avatar">
+    <img src="user.png" alt="阿部">
+  </div>
+  <div class="editor-info">
+    <p>私は、AGA選び方サイト編集部の阿部です。<br>AGAでよくある相談と考察をお話したいと思います。</p>
+    <p class="name" style="margin-top:8px;">編集部　阿部 拓海</p>
+    <p>30代になり、おでこの広がりや生え際の後退がきになってきた。手遅れになる前にヘアケアをしたいと思い、AGA治療をはじめた。</p>
+  </div>
+</div>
+
+<!-- 比較表画像（元LP） -->
+<img src="img-01.jpg" alt="オンライン治療vs対面治療比較表" class="img-block">
+
+<!-- 吹き出し -->
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    表だけでみたら、オンラインでいいじゃん！<br>
+    処方内容も同じものだし、対面と変わらないでしょ<br>
+    と思う人が多いでしょう。
+  </div>
+</div>
+
+<!-- グラフ画像 -->
+<img src="02.png" alt="毛が増え始めたと感じたのは治療開始何ヶ月目でしたか？" class="img-block">
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    そして、データを見るに、期間は半年〜1年くらいだな。と思われて治療されている方が多いと思います。
+  </div>
+</div>
+
+<div class="h2-block" style="font-size:18px;">
+  この選び方で失敗する可能性が<br>高いこと知っていますか？
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    「最初だけ効果を感じられたが、ある時から増えなくなった。どうしてだ？？」<br>
+    日に日に疑問が増えていっていった。おかしいな・・・<br><br>
+    という声が散見されます。
+  </div>
+</div>
+
+<!-- 医師画像 -->
+<img src="03.png" alt="対面クリニックでの診察" class="img-block">
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    オンラインでは効果がみられなかったので、「おかしいな」と思い、思い切って対面のクリニックに行くことに。
+  </div>
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    ようやく納得できる治療法に出会えた！ということになることが多いようです。
+  </div>
+</div>
+
+<!-- 注意喚起グラフ -->
+<img src="graph.jpg" alt="治療をはじめる患者様の中には慎重に服用が必要・治療の必用が無い方が少なくありません" class="img-block">
+
+<!-- ▼ 銀クリへの橋渡し：血液検査・個別診断へ -->
+<div style="background:#fff0f0;border-left:3px solid #c0392b;padding:12px 14px;margin:4px 0 16px;font-size:13px;color:#555;line-height:1.7;">
+  <strong style="color:#c0392b;">だから「ちゃんと診てくれる対面クリニック」を選ぶことが大事</strong><br>
+  銀座総合美容クリニックでは、治療開始前に血液検査で健康チェックを実施。副作用リスクを事前に把握した上で処方を決めるため、「薬が体に合わなかった」という事態を防げます。185万人の実績はこうした丁寧な診療の積み重ねです。
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    ここからは、この失敗談についての考察を話します。
+  </div>
+</div>
+
+<div class="h3-center"><em>どうして効果が出づらかったのか</em></div>
+
+<!-- 処方量説明画像 -->
+<img src="img2.png" alt="治療薬の処方量が間違っていたから。対面では髪の量・密度・質を直接見て触れ、薬の種類や用量を適切に調整するには対面診療が不可欠。" class="img-block">
+
+<!-- ▼ 銀クリへの橋渡し：スキャビジョンへの連結 -->
+<div style="background:#fff0f0;border-left:3px solid #c0392b;padding:12px 14px;margin:4px 0 16px;font-size:13px;color:#555;line-height:1.7;">
+  <strong style="color:#c0392b;">では、どうやって正確に測定するのか？</strong><br>
+  銀座総合美容クリニックは特許技術<strong>「スキャビジョン」</strong>で頭皮を600枚3D撮影してAI分析。毛量・毛根状態を数値化し、その数字をもとに処方を決める。「なんとなく診て薬を出す」ではなく、データで処方量を最適化できる唯一のクリニックです。
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    最近流行りのオンライン診療も、結局カメラ越しだし、量がどれくらい増えたかイマイチわからない。ミスの確率が高い、というのも聞くよな。<br>
+    結局、最短で効果を感じるには対面診療の方がよさそう。
+  </div>
+</div>
+
+<!-- 効果比較グラフ -->
+<img src="04.png" alt="対面診療を利用した方はオンラインのみの方よりも治療効果が高くなっています。対面診療＋オンライン：効果あり99.20%、オンラインのみ：効果あり35.00%" class="img-block">
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    アンケートにも書いてある！！！<br>
+    同じ治療内容でも個人差があるから、対面で調整をしてもらったほうがよかったんだ！
+  </div>
+</div>
+
+<!-- ▼ 銀クリへの橋渡し：このデータは銀クリのデータ -->
+<div style="background:#fff0f0;border-left:3px solid #c0392b;padding:12px 14px;margin:16px 0;font-size:13px;color:#555;line-height:1.7;">
+  <strong style="color:#c0392b;">補足：このデータは銀座総合美容クリニックの実績データです</strong><br>
+  対面診療＋オンラインで効果あり<strong style="color:#c0392b;">99.20%</strong>という数字は、銀クリが対面での精密検査（スキャビジョン）と個別処方調整を行っているからこそ出せる数字。「対面ならどこでも同じ」ではありません。
+</div>
+
+
+<!-- ━━━ 結局どこがいいの？ ━━━ -->
+<div class="h2-block" style="font-size:18px;">結局どこがいいの？</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    失敗を避けるためには、対面治療をまず受けるほうがよさそう。ただし、全ての対面クリニックが同じというわけではなくて、選ぶときに見るべきポイントがあります。
+  </div>
+</div>
+
+<!-- チェックポイント（自然な読み物として） -->
+<div style="background:#f5fbfb;border:1px solid #d0eaea;border-radius:8px;padding:18px;margin:16px 0;">
+  <p style="font-size:14px;font-weight:bold;color:#1a5a6a;margin-bottom:14px;">対面クリニックを選ぶときに確認したい3つのこと</p>
+
+  <div style="padding:10px 0;border-bottom:1px solid #e0eaea;">
+    <p style="font-size:14px;font-weight:bold;color:#1a1a1a;margin-bottom:4px;">① 検査できちんと状態を把握してくれるか</p>
+    <p style="font-size:13px;color:#555;line-height:1.7;">対面でも「目で見て終わり」のクリニックは多い。毛量・毛根の状態を数値で測定・記録してくれるかどうかで、処方の精度が大きく変わる。</p>
+  </div>
+
+  <div style="padding:10px 0;border-bottom:1px solid #e0eaea;">
+    <p style="font-size:14px;font-weight:bold;color:#1a1a1a;margin-bottom:4px;">② 一律処方ではなく、自分に合わせた調整ができるか</p>
+    <p style="font-size:13px;color:#555;line-height:1.7;">同じ薬でも体質・進行度によって効果が違う。検査データをもとに処方を細かく調整してくれるクリニックを選びたい。</p>
+  </div>
+
+  <div style="padding:10px 0;">
+    <p style="font-size:14px;font-weight:bold;color:#1a1a1a;margin-bottom:4px;">③ 長期間続けられる価格か</p>
+    <p style="font-size:13px;color:#555;line-height:1.7;">AGA治療は1〜2年以上の継続が前提。初月が安くても月々のコストが高かったり、縛りがあって途中でやめにくい場合は要注意。</p>
+  </div>
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    この3つの観点で対面クリニックを比べてみたところ、一つだけ全部当てはまるクリニックがありました。
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+     クリニック紹介
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━ -->
+
+
+
+<!-- ── 3社比較表（リデザイン版） ── -->
+<div style="margin:12px 0 6px;">
+
+  <!-- 銀クリ推奨バッジ -->
+  <div style="background:#c0392b;color:#fff;text-align:center;padding:8px;font-size:12px;font-weight:bold;border-radius:6px 6px 0 0;">
+    編集部おすすめ ▼
+  </div>
+
+  <!-- ヘッダー行 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:none;border-bottom:none;">
+    <div style="background:#f8f8f8;padding:8px 6px;font-size:10px;color:#aaa;border-right:1px solid #eee;display:flex;align-items:flex-end;">選ぶ基準</div>
+    <div style="background:#fff0f0;padding:8px 4px;text-align:center;border-right:1px solid #f0d0d0;">
+      <img src="clinic01.webp" style="width:100%;max-width:72px;display:block;margin:0 auto 4px;border-radius:3px;">
+      <span style="color:#c0392b;font-weight:bold;font-size:11px;line-height:1.3;">銀座総合美容<br>クリニック</span>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;border-right:1px solid #eee;">
+      <img src="clinic03.webp" style="width:100%;max-width:52px;display:block;margin:0 auto 4px;border-radius:3px;">
+      <span style="color:#999;font-size:10px;line-height:1.3;">AGAスキン<br>クリニック</span>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;">
+      <img src="shonan1.webp" style="width:100%;max-width:52px;display:block;margin:0 auto 4px;border-radius:3px;">
+      <span style="color:#999;font-size:10px;line-height:1.3;">湘南美容<br>クリニック</span>
+    </div>
+  </div>
+
+  <!-- 行①：検査 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:1px solid #f0c0c0;border-bottom:none;">
+    <div style="background:#fffbe8;padding:8px 6px;font-size:10px;font-weight:bold;color:#8a6000;border-right:1px solid #eee;display:flex;align-items:center;">①検査・<br>診断精度</div>
+    <div style="background:#fff0f0;padding:8px 6px;text-align:center;border-right:1px solid #f0d0d0;">
+      <div style="font-size:12px;font-weight:bold;color:#c0392b;margin-bottom:3px;">スキャビジョン</div>
+      <div style="font-size:10px;color:#555;line-height:1.5;">600枚3D撮影＋AI分析<br>毛量を数値化</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;border-right:1px solid #eee;">
+      <div style="font-size:10px;color:#bbb;line-height:1.5;">視診・<br>問診のみ</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;">
+      <div style="font-size:10px;color:#bbb;line-height:1.5;">視診・<br>問診のみ</div>
+    </div>
+  </div>
+
+  <!-- 行②：処方 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:1px solid #f0c0c0;border-bottom:none;">
+    <div style="background:#fffbe8;padding:8px 6px;font-size:10px;font-weight:bold;color:#8a6000;border-right:1px solid #eee;display:flex;align-items:center;">②処方の<br>個別対応</div>
+    <div style="background:#fff0f0;padding:8px 6px;text-align:center;border-right:1px solid #f0d0d0;">
+      <div style="font-size:12px;font-weight:bold;color:#c0392b;margin-bottom:3px;">院内調合</div>
+      <div style="font-size:10px;color:#555;line-height:1.5;">300超パターンから<br>体質に合わせ調整</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;border-right:1px solid #eee;">
+      <div style="font-size:10px;color:#bbb;line-height:1.5;">一律<br>処方</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;">
+      <div style="font-size:10px;color:#bbb;line-height:1.5;">一律<br>処方</div>
+    </div>
+  </div>
+
+  <!-- 行③：価格 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:1px solid #f0c0c0;border-bottom:none;">
+    <div style="background:#fffbe8;padding:8px 6px;font-size:10px;font-weight:bold;color:#8a6000;border-right:1px solid #eee;display:flex;align-items:center;">③継続<br>しやすさ</div>
+    <div style="background:#fff0f0;padding:8px 6px;text-align:center;border-right:1px solid #f0d0d0;">
+      <div style="font-size:12px;font-weight:bold;color:#c0392b;margin-bottom:3px;">初月1,000円〜</div>
+      <div style="font-size:10px;color:#555;line-height:1.5;">縛りなし<br>都度払いOK</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;border-right:1px solid #eee;">
+      <div style="font-size:10px;color:#888;line-height:1.5;">初月<br>3,700円〜</div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;">
+      <div style="font-size:10px;color:#888;line-height:1.5;">初月<br>1,800円〜</div>
+    </div>
+  </div>
+
+  <!-- 結論行 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:1px solid #f0c0c0;border-bottom:none;">
+    <div style="background:#fffbe8;padding:8px 6px;font-size:10px;font-weight:bold;color:#8a6000;border-right:1px solid #eee;display:flex;align-items:center;">3つ全部<br>揃っている？</div>
+    <div style="background:#c0392b;padding:10px 6px;text-align:center;border-right:1px solid #f0d0d0;">
+      <div style="font-size:13px;font-weight:bold;color:#fff;line-height:1.4;">すべて対応</div>
+      <div style="font-size:10px;color:rgba(255,255,255,0.85);margin-top:2px;">唯一のクリニック</div>
+    </div>
+    <div style="background:#f0f0f0;padding:10px 4px;text-align:center;border-right:1px solid #eee;">
+      <div style="font-size:10px;color:#aaa;line-height:1.5;">検査・処方が<br>標準的</div>
+    </div>
+    <div style="background:#f0f0f0;padding:10px 4px;text-align:center;">
+      <div style="font-size:10px;color:#aaa;line-height:1.5;">検査・処方が<br>標準的</div>
+    </div>
+  </div>
+
+  <!-- CTA行 -->
+  <div style="display:grid;grid-template-columns:28% 36% 18% 18%;border:2px solid #c0392b;border-top:1px solid #f0c0c0;border-radius:0 0 6px 6px;overflow:hidden;">
+    <div style="background:#f8f8f8;padding:8px 6px;font-size:10px;font-weight:bold;color:#aaa;border-right:1px solid #eee;display:flex;align-items:center;">公式サイト</div>
+    <div style="background:#fff0f0;padding:8px 6px;border-right:1px solid #f0d0d0;">
+      <a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" style="display:block;background:#c0392b;color:#fff;padding:8px 4px;border-radius:4px;text-decoration:none;font-size:10px;font-weight:bold;text-align:center;line-height:1.4;">詳細を見る ›</a>
+      <div style="text-align:center;margin-top:4px;"><span style="font-size:9px;color:#c0392b;">無料カウンセリング有</span></div>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;border-right:1px solid #eee;">
+      <a href="https://t.afi-b.com/visit.php?a=46393a-k521219u&p=3955839v" style="display:block;background:#bbb;color:#fff;padding:8px 4px;border-radius:4px;text-decoration:none;font-size:10px;font-weight:bold;line-height:1.4;">詳細を<br>見る ›</a>
+    </div>
+    <div style="background:#f8f8f8;padding:8px 4px;text-align:center;">
+      <a href="https://ac.ebis.ne.jp/tr_set.php?argument=GTHGZ4cm&ai=tsd_shounan03" style="display:block;background:#bbb;color:#fff;padding:8px 4px;border-radius:4px;text-decoration:none;font-size:10px;font-weight:bold;line-height:1.4;">詳細を<br>見る ›</a>
+    </div>
+  </div>
+
+</div>
+
+
+<!-- 比較表直後の締め吹き出し -->
+<div class="bubble" style="margin-top:16px;">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    結果として、上で話した3つの条件が<strong>全部揃っているのは銀クリだけ</strong>でした。だからおすすめしています。
+  </div>
+</div>
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    正直、調べれば調べるほど銀クリ以外の選択肢がなくなっていきました。<br>
+    無料カウンセリングから始められるので、まず一度行ってみることをおすすめします。
+  </div>
+</div>
+
+<a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" class="cta-red">
+  銀座総合美容クリニックの公式サイトを見る ▶
+  <small>無料カウンセリング受付中 ／ 初月1,000円〜</small>
+</a>
+
+<!-- 銀クリカード -->
+<div class="recommend-label">発毛治療にこだわりたい方におすすめ！</div>
+
+<div class="clinic-card main">
+  <div class="clinic-card-label">編集部イチ推し ／ 3条件すべてクリア</div>
+  <img src="clinic01.webp" alt="銀座総合美容クリニック" class="clinic-thumb">
+  <div style="padding:16px;">
+    <a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" class="cta-red">
+      公式サイトで詳細を見る ▶
+      <small>無料カウンセリング受付中</small>
+    </a>
+
+    <div class="fee-section">
+      <h4>料金</h4>
+      <table class="fee-table">
+        <tr><th>維持＆予防プラン</th><td>約<strong>2,000</strong>円/月（脱毛抑制）</td></tr>
+        <tr><th>発毛プラン</th><td>約<strong>9,700</strong>円/月（脱毛抑制・発毛促進）</td></tr>
+      </table>
+    </div>
+
+    <div class="feature-section">
+      <h4>特徴・ポイント</h4>
+      <ul class="feature-list">
+        <li><strong>185万人</strong>の治療実績</li>
+        <li><strong>特許技術</strong>の最新検査「スキャビジョン」を導入</li>
+        <li>AGA<strong>専門医</strong>が<strong>直接診断</strong></li>
+        <li>初回価格<strong>1,000円</strong>　都度払いOK！契約期間の縛りなし</li>
+        <li>院内調整で<strong>進行度に合わせた処方</strong></li>
+        <li>患者に合わせた<strong>300を超える</strong>治療バリエーション</li>
+      </ul>
+    </div>
+
+    <!-- 銀クリが最適な理由（追加） -->
+    <div class="ginza-bridge-block" style="margin:12px 0;">
+      <div class="gb-title" style="font-size:12px;padding:6px 10px;">なぜ銀座総合美容クリニックが最適なのか</div>
+      <ul class="strength-list">
+        <li>
+          <strong>検査精度：特許スキャビジョンで数値化</strong>
+          <span>毛根1本1本を高精度計測。オンライン診療では不可能な対面ならではの技術。</span>
+        </li>
+        <li>
+          <strong>処方の個別対応：300超のバリエーション</strong>
+          <span>院内調合で体質・進行度に合わせた細かな処方調整が可能。一律処方ではない。</span>
+        </li>
+        <li>
+          <strong>継続しやすい価格：初月1,000円・縛りなし</strong>
+          <span>都度払いOK、契約期間の縛りなし。長期治療を無理なく続けられる設計。</span>
+        </li>
+      </ul>
+    </div>
+
+    <div class="review-section">
+      <h4>口コミ</h4>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★☆ 4.0</div>
+          半年間悩み続けて無料カウンセリングを受けました。まずはしっかりヒアリングしてくれ、その後わかりやすい説明があり不安点が解消されました。今すぐに治療は必要ない、ということも分かり本当に安心しました。
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★★ 5.0</div>
+          AGAの治療を試したいと思っていきました。ちゃんと話を聞いてくれて親切です。
+        </div>
+      </div>
+    </div>
+    <a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" class="cta-red">
+      公式サイトで詳細を見る ▶
+    </a>
+  </div>
+</div>
+
+<!-- AGAスキンクリニック -->
+<div class="recommend-label" style="background:#f0f8ff;border-color:#aad0f0;color:#2a5a8a;">幅広い治療法から選びたい方におすすめ！</div>
+
+<div class="clinic-card">
+  <img src="clinic03.webp" alt="AGAスキンクリニック" class="clinic-thumb">
+  <div style="padding:16px;">
+    <a href="https://t.afi-b.com/visit.php?a=46393a-k521219u&p=3955839v" class="cta-gray">
+      公式サイトで詳細を見る ▶
+    </a>
+    <div class="fee-section">
+      <h4>料金</h4>
+      <table class="fee-table">
+        <tr><th>維持＆予防プラン</th><td>約<strong style="color:#555;">6,600</strong>円/月（脱毛抑制）</td></tr>
+        <tr><th>発毛プラン</th><td>約<strong style="color:#555;">15,400</strong>円/月（脱毛抑制・発毛促進）</td></tr>
+      </table>
+    </div>
+    <div class="feature-section">
+      <h4>特徴・ポイント</h4>
+      <ul class="feature-list">
+        <li style="color:#555;">AGA専門の治療院</li>
+        <li style="color:#555;">全国展開で通いやすいクリニック網</li>
+        <li style="color:#555;">完全個室・プライバシー重視の診療空間</li>
+      </ul>
+    </div>
+    <div class="review-section">
+      <h4>口コミ</h4>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★☆ 4.0</div>
+          対応してくれたスタッフさんも親身になって聞いてくださいました。料金はちょい高めだけど効果がありそうなのは伝わりました。
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★★ 5.0</div>
+          いつも丁寧で様子をみながらしっかりお声掛けしてくださるので安心してお任せできます！悩みの種の薄毛はもう殆ど改善されました。
+        </div>
+      </div>
+    </div>
+    <a href="https://t.afi-b.com/visit.php?a=46393a-k521219u&p=3955839v" class="cta-gray">公式サイトで詳細を見る ▶</a>
+  </div>
+</div>
+
+<!-- 湘南美容クリニック -->
+<div class="recommend-label" style="background:#f0f8ff;border-color:#aad0f0;color:#2a5a8a;">費用面を重視したい方におすすめ</div>
+
+<div class="clinic-card">
+  <img src="shonan1.webp" alt="湘南美容クリニック" class="clinic-thumb">
+  <div style="padding:16px;">
+    <a href="https://ac.ebis.ne.jp/tr_set.php?argument=GTHGZ4cm&ai=tsd_shounan03" class="cta-gray">
+      公式サイトで詳細を見る ▶
+    </a>
+    <div class="fee-section">
+      <h4>料金</h4>
+      <table class="fee-table">
+        <tr><th>維持＆予防プラン</th><td>約<strong style="color:#555;">3,300</strong>円/月（内服薬）</td></tr>
+        <tr><th>発毛プラン</th><td>約<strong style="color:#555;">7,980</strong>円/月（内服薬）</td></tr>
+      </table>
+    </div>
+    <div class="feature-section">
+      <h4>特徴・ポイント</h4>
+      <ul class="feature-list">
+        <li style="color:#555;">コスパと実績を重視</li>
+        <li style="color:#555;">大手美容クリニックで治療メニューが豊富</li>
+        <li style="color:#555;">丁寧なスタッフ対応</li>
+      </ul>
+    </div>
+    <div class="review-section">
+      <h4>口コミ</h4>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★★ 5.0</div>
+          カウンセリングなども無料ですし、満足いかないなら全額返金保証なので契約しました。先生やスタッフさんも良くしてくださっています。
+        </div>
+      </div>
+      <div class="review-item">
+        <div class="review-icon"><img src="user.png" alt=""></div>
+        <div class="review-body">
+          <div class="review-stars">満足度 ★★★★★ 5.0</div>
+          安心して施術を受けることが出来ました。
+        </div>
+      </div>
+    </div>
+    <a href="https://ac.ebis.ne.jp/tr_set.php?argument=GTHGZ4cm&ai=tsd_shounan03" class="cta-gray">公式サイトで詳細を見る ▶</a>
+  </div>
+</div>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━
+     比較表（追加強化版）
+━━━━━━━━━━━━━━━━━━━━━━ -->
+<hr class="divider-strong">
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    改めて3社を比較してみると、<strong>検査技術・処方の個別対応</strong>の点で銀座総合美容クリニックが大きく差をつけています。
+  </div>
+</div>
+
+<div class="compare-note">
+  <strong>比較のポイント：</strong>検査技術の精度・処方の個別対応力・継続しやすい価格の3点が最大の差です。
+</div>
+
+<div style="overflow-x:auto;">
+  <table class="compare-tbl">
+    <thead>
+      <tr>
+        <th class="th-label">比較項目</th>
+        <th class="th-ginza">🥇 銀座総合美容<br>クリニック</th>
+        <th class="th-other">AGA<br>スキンクリニック</th>
+        <th class="th-other">湘南美容<br>クリニック</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="td-label">治療方針</td>
+        <td class="td-ginza"><span class="tag">対面＋オンライン</span></td>
+        <td class="td-other">対面のみ</td>
+        <td class="td-other">対面＋オンライン</td>
+      </tr>
+      <tr>
+        <td class="td-label">検査技術</td>
+        <td class="td-ginza"><span class="tag">特許スキャビジョン</span></td>
+        <td class="td-other">標準的</td>
+        <td class="td-other">標準的</td>
+      </tr>
+      <tr>
+        <td class="td-label">処方個別対応</td>
+        <td class="td-ginza"><span class="tag">300超パターン</span></td>
+        <td class="td-other">標準的</td>
+        <td class="td-other">標準的</td>
+      </tr>
+      <tr>
+        <td class="td-label">初月料金</td>
+        <td class="td-ginza"><span class="tag">1,000円〜</span></td>
+        <td class="td-other">3,700円〜</td>
+        <td class="td-other">1,800円〜</td>
+      </tr>
+      <tr>
+        <td class="td-label">継続月料金</td>
+        <td class="td-ginza"><span class="tag">約2,000円〜</span></td>
+        <td class="td-other">約6,600円〜</td>
+        <td class="td-other">約3,300円〜</td>
+      </tr>
+      <tr>
+        <td class="td-label">縛り</td>
+        <td class="td-ginza"><span class="tag">なし</span></td>
+        <td class="td-other">要確認</td>
+        <td class="td-other">要確認</td>
+      </tr>
+      <tr>
+        <td class="td-label">治療実績</td>
+        <td class="td-ginza"><span class="tag">185万人</span></td>
+        <td class="td-other">多数</td>
+        <td class="td-other">多数</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" class="cta-red" style="margin-top:16px;">
+  【銀座総合美容クリニック】公式サイトで詳細を見る ▶
+  <small>無料カウンセリング受付中</small>
+</a>
+
+<!-- ━━━━━━━━━━━━━━━━━━━━━━
+     FAQ（元LP再現）
+━━━━━━━━━━━━━━━━━━━━━━ -->
+<hr class="divider">
+
+<div class="bubble">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">AGA治療でよく聞かれることを以下にまとめておきました。</div>
+</div>
+
+<div class="h2-block teal" style="font-size:16px;">AGAについてのよくある質問</div>
+
+<div class="faq-block">
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>AGA治療はいつから始めるべきですか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>気になったら早いほどよいです。薄毛は進行性で、放置するほど治療が難しくなります。AGAは20代から発症するケースも多く、早い段階で治療を始めるほど少ない治療量で高い効果が得られます。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>治療を始めてどれくらいで効果が出ますか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>一般的には3〜6ヶ月目から変化を実感する方が多いようです。初期には抜け毛が減り、次第に発毛や毛量の増加が見られます。効果の出方には個人差があり、継続することで安定した発毛効果が期待できます。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>治療をやめると元に戻りますか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>治療を中断すると、再び薄毛が進行する可能性が高いです。AGAは体質や遺伝的な進行症で、薬は「進行を抑える」役割がメインです。症状と相談しながら、医師と話し合いながら治療内容を調整することが大切です。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>20代・30代でもAGA治療は早すぎませんか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>AGAは20代から発症するケースも多く、早いうちに始めるほど治療がやりやすくなります。「まだ大丈夫」と思っている間に進んでしまうこともあるため、早めの相談がおすすめです。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>AGA治療の内服薬と外用薬はどちらが効果的ですか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>多くの場合、内服薬と外用薬の併用が最も効果的とされています。症状や進行度に応じて、医師が最適な治療方法を提案します。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>市販の育毛剤やサプリでも効果はありますか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>予防や補助的なケアとしては有効ですが、治療効果は限定的です。専門クリニックでの診察をお勧めします。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>AGA治療薬に副作用はありますか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>まれに副作用が起こることがあります。性欲減退、初期脱毛、体重増加などが報告されています。多くは軽度で初期頃に収まりますが、気になる場合はすぐに医師に相談することが大切です。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q"><span class="faq-q-mark">Q</span>薬を個人輸入しても問題ないですか？</div>
+    <div class="faq-a"><span class="faq-a-mark">A</span>おすすめできません。個人輸入のAGA治療薬は成分が不明だったり偽造薬のリスクがあり、安全性が保証されていません。また副作用が起きた場合も医師のフォローを受けられません。</div>
+  </div>
+</div>
+
+<!-- 最終CTA -->
+<div class="final-cta-block">
+  <p>まずは無料カウンセリングから</p>
+  <h3>今の状態を専門医に<br>診てもらいませんか</h3>
+  <a href="https://t.afi-b.com/visit.php?a=O19748-p521217D&p=3955839v&gclid=test" class="cta-final">
+    銀座総合美容クリニックの公式サイトを見る
+    <small>初月1,000円〜 ／ 縛りなし ／ 無料カウンセリングあり</small>
+  </a>
+</div>
+
+<div class="bubble" style="margin-top:24px;">
+  <div class="bubble-icon"><img src="user.png" alt="阿部"></div>
+  <div class="bubble-body">
+    最後まで見てくれてありがとうございます！<br><br>
+    私も薄毛なのですが、このページ作成の依頼が来たとき、運命的なものを感じました。ひとりでも薄毛で悩む人を減らしたいと思っているので、みなさまの助けになっていると嬉しいです。
+  </div>
+</div>
+
+</div><!-- /content -->
+
+<div class="lp-footer">
+  <a href="https://aga-erabikata.site/company/">運営者情報</a><br>
+  © AGA 選び方
+</div>
+
+</div><!-- /wrap -->
+</body>
+</html>
